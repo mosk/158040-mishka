@@ -7,11 +7,12 @@
   <body>
 
     <header class="page-header">
-      <a class="logo">Интернет-магазин классных штук
-        <img src="" alt="Mishka">
-      </a>
-      <nav class="nav">
-        <ul class="menu">
+      <div class="page-header__header">
+        <a class="page-header__logo logo">Интернет-магазин классных штук
+          <img src="" alt="Mishka">
+        </a>
+        <label for="toggle-menu">Показать меню:<input type="checkbox" id="toggle-menu" class="toggle-menu"></label>
+        <ul class="page-header__menu">
           <li class="menu__item">
             <a href="catalog.html">Каталог</a>
           </li>
@@ -19,30 +20,30 @@
             <a href="form.html">Вязание на заказ</a>
           </li>
           <li class="menu__item">
-            <input type="search" id="search"><label for="search">Поиск по сайту</label>
+            <label for="search">Поиск по сайту<input type="search" id="search"></label>
           </li>
           <li class="menu__item">
             <a href="">Корзина: пока пуста</a>
           </li>
         </ul>
-      </nav>
+      </div>
       <div class="promo">
-        <h1 class="title">Милые штуки ручной<br>работы для дома</h1>
-        <div class="catalog">
-          <a href="" class="interior">Предметы интерьера</a>
-          <a href="" class="toys">Детские игрушки</a>
+        <h1 class="promo__title">Милые штуки ручной<br>работы для дома</h1>
+        <div class="promo__buttons">
+          <a href="" class="promo__button promo__button--interior">Предметы интерьера</a>
+          <a href="" class="promo__button promo__button--toys">Детские игрушки</a>
         </div>
       </div>
     </header>
 
     <main class="main">
       <section class="popular">
-        <h2 class="title">Вязанные корзинки</h2>
-        <h3 class="subtitle">Товар недели</h3>
-        <p class="text">
+        <h2 class="popular__title">Вязанные корзинки</h2>
+        <h3 class="popular__subtitle">Товар недели</h3>
+        <p class="popular__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.
         </p>
-        <table class="properties">
+        <table class="popular__properties">
           <tr>
             <td>Цвет:</td>
             <td>«Тиффани»/серый</td>
@@ -56,33 +57,35 @@
             <td>15 см</td>
           </tr>
         </table>
-        <img src="" alt="Вязанные корзинки" height="315" width="260">
-        <p class="price">Цена: 990 руб.</p>
-        <input type="button" class="button button--submit" value="Заказать">
-        <form class="modal">
+        <div class="popular__img">
+          <img src="http://placehold.it/150x100" alt="Вязанные корзинки" width="150" height="100">
+        </div>
+        <p class="popular__price">Цена: 990 руб.</p>
+        <button type="button" class="popular__button button button--submit" value="Заказать">Заказать</button>
+        <form class="popular__modal modal" method="post" action="https://echo.htmlacademy.ru/">
           <h3 class="title">Добавить в корзину</h3>
           <p class="text">Выберите размер:</p>
-          <label for="size--s" class="label label--size">S</label><input type="radio" class="button button--size" name="size" checked id="size--s">
-          <label for="size--m" class="label label--size">M</label><input type="radio" class="button button--size" name="size" id="size--m">
-          <label for="size--l" class="label label--size">L</label><input type="radio" class="button button--size" name="size" id="size--l">
+          <label for="size--s" class="label label--size">S<input type="radio" class="button button--size" name="size" value="s" id="size--s" checked ></label>
+          <label for="size--m" class="label label--size">M<input type="radio" class="button button--size" name="size" value="m" id="size--m"></label>
+          <label for="size--l" class="label label--size">L<input type="radio" class="button button--size" name="size" value="l" id="size--l"></label>
           <input type="submit" class="button button--submit" value="Добавить">
         </form>
       </section>
       <section class="about">
-        <h2 class="title">Коротко о нас:</h2>
-        <ul class="list">
-          <li class="list__item">Экологически чистые материалы</li>
-          <li class="list__item">Скандинавский стиль по российской цене</li>
-          <li class="list__item">Увеличивает лайки на фотографиях</li>
-          <li class="list__item">Связано вручную с любовью и умилением</li>
-          <li class="list__item">Поддержка отечественного производителя</li>
-          <li class="list__item">Поставляется в подарочной упаковке</li>
+        <h2 class="about__title">Коротко о нас:</h2>
+        <ul class="about__list">
+          <li class="list__item list__item--eco">Экологически чистые материалы</li>
+          <li class="list__item list__item--style">Скандинавский стиль по российской цене</li>
+          <li class="list__item list__item--like">Увеличивает лайки на фотографиях</li>
+          <li class="list__item list__item--love">Связано вручную с любовью и умилением</li>
+          <li class="list__item list__item--support">Поддержка отечественного производителя</li>
+          <li class="list__item list__item--gift">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
       <section class="review">
-        <h2 class="title">Отзывы</h2>
+        <h2 class="review__title">Отзывы</h2>
         <div class="review__item">
-          <p class="text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <p class="review__name">Анастасия Красильникова</p>
           <a href="" class="review__link">@misssssiskras</a>
         </div>
@@ -91,12 +94,12 @@
         <input type="submit" class="button button--submit" value="Написать">
       </section>
       <section class="contacts">
-        <h2 class="title">Контакты</h2>
-        <p class="mail">info@mimimishkashop.ru</p>
-        <p class="address">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8, офис&nbsp;101</p>
-        <div class="map">Карта</div>
+        <h2 class="contacts__title">Контакты</h2>
+        <p class="contacts__mail">info@mimimishkashop.ru</p>
+        <p class="contacts__address">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8, офис&nbsp;101</p>
+        <div class="contacts__map map">Карта</div>
         <div class="feedback">
-          <input type="submit" class="button button--submit" value="Напишите нам">
+          <button class="button button--submit">Напишите нам</button>
         </div>
       </section>
     </main>
