@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML Academy: Мишка | Вязание на заказ</title>
-</head>
-<body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Мишка | Вязание на заказ</title>
+  </head>
+  <body>
+
     <header class="page-header">
       <div class="page-header__header">
         <a href="index.html" class="page-header__logo logo">Интернет-магазин классных штук
@@ -28,5 +29,83 @@
       </div>
     </header>
 
-</body>
+    <main class="main">
+      <section class="service">
+        <h2 class="service__title">Вязание на заказ</h2>
+        <p class="service__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="service__form">
+          <fieldset class="service-type">
+            <legend class="service-type__title">Тип</legend>
+            <label for="type-accessory" class="service-type__item">
+              <input type="radio" name="type" id="type-accessory" value="Аксессуар для интерьера" checked>Аксессуар для интерьера
+            </label>
+            <label for="type-toy" class="service-type__item">
+              <input type="radio" name="type" id="type-toy" value="Детская игрушка">Детская игрушка
+            </label>
+          </fieldset>
+          <fieldset class="service-color">
+            <legend class="service-color__title">Цвет</legend>
+            <label for="color-white" class="service-color__item">
+              <input name="color" type="checkbox" id="color-white" value="Белый" checked>Белый
+            </label>
+            <label for="color-grey" class="service-color__item">
+              <input name="color" type="checkbox" id="color-grey" value="Серый" checked>Серый
+            </label>
+            <label for="color-tiffany" class="service-color__item">
+              <input name="color" type="checkbox" id="color-tiffany" value="Тиффани">«Тиффани»
+            </label>
+            <label for="color-black" class="service-color__item">
+              <input name="color" type="checkbox" id="color-black" value="Чёрный">Чёрный
+            </label>
+            <label for="color-pink" class="service-color__item">
+              <input name="color" type="checkbox" id="color-pink" value="Розовый">Розовый
+            </label>
+            <label for="color-orange" class="service-color__item">
+              <input name="color" type="checkbox" id="color-orange" value="Оранжевый">Оранжевый
+            </label>
+          </fieldset>
+          <fieldset class="service-person">
+            <legend class="service-person__title">ФИО</legend>
+            <label for="person-name" class="service-person__item">Имя:
+              <input name="person-name" type="text" id="person-name" placeholder="Введите ваше имя*">
+            </label>
+            <label for="person-surname" class="service-person__item">Фамилия:
+              <input name="person-surname" type="text" id="person-surname" placeholder="Укажите фамилию*">
+            </label>
+            <label for="person-patronymic" class="service-person__item">Отчество:
+              <input name="person-patronymic" type="text" id="person-patronymic" placeholder="Отчество, если желаете">
+            </label>
+          </fieldset>
+          <fieldset class="service-tel">
+            <legend class="service-tel__title">Тел</legend>
+            <label for="tel-number" class="service-tel__item">
+              <input name="tel-number" type="text" id="tel-number" placeholder="+7 XXX XX XX*">
+            </label>
+          </fieldset>
+          <fieldset class="service-mail">
+            <legend class="service-mail__title">E-mail</legend>
+            <label for="mail-address" class="service-mail__item">
+              <input name="mail-address" type="text" id="mail-address" placeholder="Ваш Email*">
+            </label>
+          </fieldset>
+          <fieldset class="service-extra">
+            <legend class="service-extra__title">Доп</legend>
+            <textarea name="extra-text" id="extra-text" cols="30" rows="10" class="service-extra__item" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <p class="service__note">*Поля обязательны к заполнению</p>
+          <input type="submit" class="button button--submit" value="Отправить заказ">
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__social-links">
+        <a href="" class="social-link social-link--inst">Наш инстаграм</a>
+        <a href="" class="social-link social-link--fb">Мы в фейсбуке</a>
+        <a href="" class="social-link social-link--tw">Твиттер</a>
+      </div>
+      <div class="copyright">Разработано <a href="">html-academy</a></div>
+    </footer>
+
+  </body>
 </html>

@@ -62,14 +62,22 @@
         </div>
         <p class="popular__price">Цена: 990 руб.</p>
         <button type="button" class="popular__button button button--submit" value="Заказать">Заказать</button>
-        <form class="popular__modal modal" method="post" action="https://echo.htmlacademy.ru/">
-          <h3 class="title">Добавить в корзину</h3>
-          <p class="text">Выберите размер:</p>
-          <label for="size--s" class="label label--size">S<input type="radio" class="button button--size" name="size" value="s" id="size--s" checked ></label>
-          <label for="size--m" class="label label--size">M<input type="radio" class="button button--size" name="size" value="m" id="size--m"></label>
-          <label for="size--l" class="label label--size">L<input type="radio" class="button button--size" name="size" value="l" id="size--l"></label>
-          <input type="submit" class="button button--submit" value="Добавить">
-        </form>
+          <form class="popular-item__modal modal" method="post" action="https://echo.htmlacademy.ru/">
+            <h3 class="modal__title">Добавить в корзину</h3>
+            <fieldset>
+              <legend class="modal__text">Выберите размер:</legend>
+              <label for="size--s" class="label label--size">S
+                <input type="radio" class="button button--size" name="size" value="s" id="size--s" checked >
+              </label>
+              <label for="size--m" class="label label--size">M
+                <input type="radio" class="button button--size" name="size" value="m" id="size--m">
+              </label>
+              <label for="size--l" class="label label--size">L
+                <input type="radio" class="button button--size" name="size" value="l" id="size--l">
+              </label>
+            </fieldset>
+            <input type="submit" class="button button--submit" value="Добавить">
+          </form>
       </section>
       <section class="about">
         <h2 class="about__title">Коротко о нас:</h2>
