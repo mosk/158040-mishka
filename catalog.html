@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Мишка | Каталог</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="page-header__header">
+        <a href="index.html" class="page-header__logo logo">Интернет-магазин классных штук
+          <img src="" alt="Mishka">
+        </a>
+        <label for="toggle-menu">Показать меню:<input type="checkbox" id="toggle-menu" class="toggle-menu"></label>
+        <ul class="page-header__menu menu">
+          <li class="menu__item">
+            <a>Каталог</a>
+          </li>
+          <li class="menu__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="menu__item">
+            <label for="search">Поиск по сайту<input type="search" id="search"></label>
+          </li>
+          <li class="menu__item">
+            <a href="">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="catalog">
+        <h1 class="catalog__title">Каталог</h1>
+        <article class="catalog-item">
+          <div class="catalog-item__img">
+            <img src="http://placehold.it/260x195" alt="Фотография товара">
+          </div>
+          <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+          <p class="catalog-item__description">Рост 30 см, вес 200 гр</p>
+          <p class="catalog-item__price">1200 руб.</p>
+          <button class="catalog-item__button">Добавить в корзину</button>
+          <form class="catalog-item__modal modal" method="post" action="https://echo.htmlacademy.ru/">
+            <h3 class="modal__title">Добавить в корзину</h3>
+            <fieldset>
+              <legend class="modal__text">Выберите размер:</legend>
+              <label for="size--s" class="label label--size">S
+                <input type="radio" class="button button--size" name="size" value="s" id="size--s" checked >
+              </label>
+              <label for="size--m" class="label label--size">M
+                <input type="radio" class="button button--size" name="size" value="m" id="size--m">
+              </label>
+              <label for="size--l" class="label label--size">L
+                <input type="radio" class="button button--size" name="size" value="l" id="size--l">
+              </label>
+            </fieldset>
+            <input type="submit" class="button button--submit" value="Добавить">
+          </form>
+        </article>
+        <article class="catalog-item">
+          <div class="catalog-item__img">
+            <img src="http://placehold.it/260x195" alt="Фотография товара">
+          </div>
+          <h2 class="catalog-item__title">Корзинка для белья</h2>
+          <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+          <p class="catalog-item__price">690 руб.</p>
+          <button class="catalog-item__button">Добавить в корзину</button>
+          <form class="catalog-item__modal modal" method="post" action="https://echo.htmlacademy.ru/">
+            <h3 class="modal__title">Добавить в корзину</h3>
+            <fieldset>
+              <legend class="modal__text">Выберите размер:</legend>
+              <label for="size--s" class="label label--size">S
+                <input type="radio" class="button button--size" name="size" value="s" id="size--s" checked >
+              </label>
+              <label for="size--m" class="label label--size">M
+                <input type="radio" class="button button--size" name="size" value="m" id="size--m">
+              </label>
+              <label for="size--l" class="label label--size">L
+                <input type="radio" class="button button--size" name="size" value="l" id="size--l">
+              </label>
+            </fieldset>
+            <input type="submit" class="button button--submit" value="Добавить">
+          </form>
+        </article>
+        <article class="catalog-item">
+          <div class="catalog-item__img">
+            <img src="http://placehold.it/260x195" alt="Фотография товара">
+          </div>
+          <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+          <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+          <p class="catalog-item__price">1 500 руб.</p>
+          <button class="catalog-item__button">Добавить в корзину</button>
+          <form class="catalog-item__modal modal" method="post" action="https://echo.htmlacademy.ru/">
+            <h3 class="modal__title">Добавить в корзину</h3>
+            <fieldset>
+              <legend class="modal__text">Выберите размер:</legend>
+              <label for="size--s" class="label label--size">S
+                <input type="radio" class="button button--size" name="size" value="s" id="size--s" checked >
+              </label>
+              <label for="size--m" class="label label--size">M
+                <input type="radio" class="button button--size" name="size" value="m" id="size--m">
+              </label>
+              <label for="size--l" class="label label--size">L
+                <input type="radio" class="button button--size" name="size" value="l" id="size--l">
+              </label>
+            </fieldset>
+            <input type="submit" class="button button--submit" value="Добавить">
+          </form>
+        </article>
+        <article class="catalog-item catalog-item--video">
+          <h2 class="catalog-item__title catalog-item__title--video">Процесс производства</h2>
+          <video src="" class="catalog-item__video" width="260" height="150"></video>
+          <p class="catalog-item__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <button class="catalog-item__button button">Сделать заказ</button>
+        </article>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__social-links">
+        <a href="" class="social-link social-link--inst">Наш инстаграм</a>
+        <a href="" class="social-link social-link--fb">Мы в фейсбуке</a>
+        <a href="" class="social-link social-link--tw">Твиттер</a>
+      </div>
+      <div class="copyright">Разработано <a href="">html-academy</a></div>
+    </footer>
+
+  </body>
+</html>

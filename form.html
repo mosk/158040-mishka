@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Мишка | Вязание на заказ</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="page-header__header">
+        <a href="index.html" class="page-header__logo logo">Интернет-магазин классных штук
+          <img src="" alt="Mishka">
+        </a>
+        <label for="toggle-menu">Показать меню:<input type="checkbox" id="toggle-menu" class="toggle-menu"></label>
+        <ul class="page-header__menu menu">
+          <li class="menu__item">
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li class="menu__item">
+            <a>Вязание на заказ</a>
+          </li>
+          <li class="menu__item">
+            <label for="search">Поиск по сайту<input type="search" id="search"></label>
+          </li>
+          <li class="menu__item">
+            <a href="">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="service">
+        <h2 class="service__title">Вязание на заказ</h2>
+        <p class="service__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="service__form">
+          <fieldset class="service-item">
+            <legend class="service-item__title">Тип</legend>
+            <label for="type-accessory" class="service-item__type">
+              <input type="radio" name="type" id="type-accessory" value="Аксессуар для интерьера" checked>Аксессуар для интерьера
+            </label>
+            <label for="type-toy" class="service-item__type">
+              <input type="radio" name="type" id="type-toy" value="Детская игрушка">Детская игрушка
+            </label>
+          </fieldset>
+          <fieldset class="service-item">
+            <legend class="service-item__title">Цвет</legend>
+            <label for="color-white" class="service-item__color">
+              <input name="color" type="checkbox" id="color-white" value="Белый" checked>Белый
+            </label>
+            <label for="color-grey" class="service-item__color">
+              <input name="color" type="checkbox" id="color-grey" value="Серый" checked>Серый
+            </label>
+            <label for="color-tiffany" class="service-item__color">
+              <input name="color" type="checkbox" id="color-tiffany" value="Тиффани">«Тиффани»
+            </label>
+            <label for="color-black" class="service-item__color">
+              <input name="color" type="checkbox" id="color-black" value="Чёрный">Чёрный
+            </label>
+            <label for="color-pink" class="service-item__color">
+              <input name="color" type="checkbox" id="color-pink" value="Розовый">Розовый
+            </label>
+            <label for="color-orange" class="service-item__color">
+              <input name="color" type="checkbox" id="color-orange" value="Оранжевый">Оранжевый
+            </label>
+          </fieldset>
+          <fieldset class="service-item">
+            <legend class="service-item__title">ФИО</legend>
+            <label for="person-name" class="service-item__person">Имя:
+              <input name="person-name" type="text" id="person-name" placeholder="Введите ваше имя*">
+            </label>
+            <label for="person-surname" class="service-item__person">Фамилия:
+              <input name="person-surname" type="text" id="person-surname" placeholder="Укажите фамилию*">
+            </label>
+            <label for="person-patronymic" class="service-item__person">Отчество:
+              <input name="person-patronymic" type="text" id="person-patronymic" placeholder="Отчество, если желаете">
+            </label>
+          </fieldset>
+          <fieldset class="service-item">
+            <legend class="service-item__title">Тел</legend>
+            <label for="tel-number" class="service-item__tel">
+              <input name="tel-number" type="text" id="tel-number" placeholder="+7 XXX XX XX*">
+            </label>
+          </fieldset>
+          <fieldset class="service-item">
+            <legend class="service-item__title">E-mail</legend>
+            <label for="mail-address" class="service-item__mail">
+              <input name="mail-address" type="text" id="mail-address" placeholder="Ваш Email*">
+            </label>
+          </fieldset>
+          <fieldset class="service-item">
+            <legend class="service-item__title">Доп</legend>
+            <textarea name="extra-text" id="extra-text" cols="30" rows="10" class="service-item__extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <p class="service__note">*Поля обязательны к заполнению</p>
+          <input type="submit" class="button button--submit" value="Отправить заказ">
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__social-links">
+        <a href="" class="social-link social-link--inst">Наш инстаграм</a>
+        <a href="" class="social-link social-link--fb">Мы в фейсбуке</a>
+        <a href="" class="social-link social-link--tw">Твиттер</a>
+      </div>
+      <div class="copyright">Разработано <a href="">html-academy</a></div>
+    </footer>
+
+  </body>
+</html>
