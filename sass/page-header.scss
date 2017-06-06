@@ -1,3 +1,9 @@
 .page-header {
   background-color: red;
+  &__header {
+    background-color: #f5f5f5;
+  }
+  &__menu {
+    display: none;
+  }
 }
