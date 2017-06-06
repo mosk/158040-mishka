@@ -1,0 +1,16 @@
+.page-header {
+  background-color: red;
+}
+
+.page-header__header {
+  height: 80px;
+  background-color: gold;
+}
+
+.page-header__menu {
+  display: none;
+}
+
+.menu__toggle:checked ~ .page-header__menu {
+  display: block;
+}
