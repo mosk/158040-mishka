@@ -1,6 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: aliceblue;
   min-width: 300px;
   width: 300px;
+  margin: 0 auto;
   font-family: 'Open Sans', Arial, sans-serif;
+  background-color: aliceblue;
+}
+
+a {
+  text-decoration: none;
 }

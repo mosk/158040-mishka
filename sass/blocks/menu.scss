@@ -1,3 +1,25 @@
 .menu {
-  background: green;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin: 0;
+  background-color: #f5f5f5;
+  border: 2px solid red;
+}
+
+.menu__toggle {
+  display: none;
+}
+
+.menu__toggle-description {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 21px;
+  font-size: 0;
+  background-color: black;
+}
+
+.menu__item {
+  font-size: 17px;
 }

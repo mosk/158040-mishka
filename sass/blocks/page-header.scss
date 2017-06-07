@@ -3,7 +3,14 @@
 }
 
 .page-header__header {
-  height: 80px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: stretch;
+  min-height: 80px;
+  padding: 10px 30px;
   background-color: gold;
 }
 
