@@ -1,0 +1,42 @@
+.popular {
+  padding-top: 33px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.popular__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.popular__subtitle {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.popular__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.popular__properties {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+  dt {
+    width: 45%;
+  }
+  dd {
+    width: 55%;
+  }
+}
+
+

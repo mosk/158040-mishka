@@ -1,0 +1,39 @@
+.promo {
+  position: relative;
+  height: 490px;
+  padding-top: 23.44%;
+  background-color: #fdfdfd;
+}
+
+.promo__title {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.promo__buttons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.promo__button {
+  display: inline-block;
+  height: 103px;
+  width: 100%;
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-right: 50%;
+  vertical-align: middle;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #56c3b2;
+  &:first-child {
+    background-color: #63d1bb;
+  }
+}
