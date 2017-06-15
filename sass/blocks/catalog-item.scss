@@ -1,0 +1,19 @@
+.catalog-item {
+  @include padding();
+  padding-top: 30px;
+  border: 1px solid  #ececec;
+}
+
+.catalog-item__title {
+  @include padding();
+  padding-top: 21px;
+  padding-bottom: 12px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.catalog-item__description {
+  @include padding();
+  font-size: 13px;
+  color: #444444;
+}
