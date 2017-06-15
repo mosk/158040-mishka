@@ -1,0 +1,32 @@
+.review {
+  @include padding();
+}
+
+.review__title {
+  @include title();
+}
+
+.review__text {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.review__name {
+  font-size: 17px;
+}
+
+.review__link {
+  font-size: 17px;
+}
+
+.review__nav {
+  display: flex;
+}
+
+.review__button {
+  width: 50%;
+  height: 52px;
+  border-width: 1px;
+}
+

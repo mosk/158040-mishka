@@ -9,8 +9,7 @@
 }
 
 .promo__title {
-  padding-left: 30px;
-  padding-right: 30px;
+  @include padding();
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;

@@ -1,7 +1,6 @@
 .popular {
   padding-top: 33px;
-  padding-left: 30px;
-  padding-right: 30px;
+  @include padding();
 }
 
 .popular__title {
@@ -49,4 +48,8 @@
   font-weight: 700;
   line-height: 24px;
   color: #444444;
+}
+
+.popular__button {
+  width: 100%;
 }

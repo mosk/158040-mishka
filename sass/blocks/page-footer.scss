@@ -1,0 +1,15 @@
+.page-footer__social-links {
+  @include padding();
+  display: flex;
+  justify-content: space-around;
+  font-size: 0;
+  background-color: #f1f1f1;
+}
+
+.page-footer__copyright {
+  @include padding();
+  text-align: center;
+  a {
+    font-size: 0;
+  }
+}

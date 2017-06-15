@@ -1,0 +1,29 @@
+.contacts__title {
+  @include padding();
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts__properties {
+  @include padding();
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  dt {
+    width: 45%;
+  }
+  dd {
+    width: 55%;
+  }
+}
+
+.contacts__map {
+  height: 458px;
+  font-size: 0;
+}
+
+.contacts__feedback {
+  @include padding();
+}

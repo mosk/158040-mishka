@@ -1,14 +1,24 @@
 .about {
   &::before {
-
   }
 }
 
 .about__title {
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: 700;
-  text-align: center;
+  @include title();
+  @include padding();
 }
+
+.about__list {
+  @include padding;
+  list-style-type: none;
+}
+
+.about__item {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  svg {
+    display: block;
+  }
+}
+
