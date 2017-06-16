@@ -3,7 +3,6 @@
 }
 
 body {
-  width: 320px;
   min-width: 320px;
   font-family: 'Open Sans', Arial, sans-serif;
   background-color: aliceblue;
@@ -21,7 +20,8 @@ dt,
 dd,
 button,
 ul,
-li {
+li,
+fieldset {
   margin: 0;
   padding: 0;
 }

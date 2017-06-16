@@ -1,0 +1,19 @@
+.service {
+  @include padding();
+  padding-bottom: 58px;
+}
+
+.service__title {
+  @include margin();
+  @include page-title();
+}
+
+.service__description {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.service__note {
+  font-size: 14px;
+  color: #444444;
+}

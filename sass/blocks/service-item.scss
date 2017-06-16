@@ -1,0 +1,36 @@
+.service-item {
+  border: 0px solid transparent;
+  font-size: 17px;
+  font-weight: 700;
+  input[type=text] {
+    padding-left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  input[type=text],
+  textarea {
+    width: 100%;
+    font-size: 17px;
+    border: 0 solid transparent;
+  }
+}
+
+.service-item__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.service-item__type,
+.service-item__color,
+.service-item__person,
+.service-item__tel,
+.service-item__mail,
+.service-item__extra {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.service-item__extra {
+  padding: 15px;
+}
