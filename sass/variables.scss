@@ -1,0 +1,37 @@
+@mixin title() {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+@mixin padding() {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin margin() {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+@mixin clear() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin pseudo() {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+@mixin page-title() {
+  padding-top: 66px;
+  padding-bottom: 73px;
+  font-size: 27px;
+  text-align: center;
+  background-color: #f1f1f1;
+}

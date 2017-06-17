@@ -1,0 +1,27 @@
+.about {
+  padding-top: 69px;
+  &::before {
+  }
+}
+
+.about__title {
+  @include title();
+  @include padding();
+  padding-bottom: 25px;
+}
+
+.about__list {
+  @include padding;
+  list-style-type: none;
+}
+
+.about__item {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  svg {
+    display: block;
+    margin-bottom: 11px;
+  }
+}
+

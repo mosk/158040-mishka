@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6,
+p,
+dl,
+dt,
+dd,
+button,
+ul,
+li,
+fieldset {
+  margin: 0;
+  padding: 0;
+}

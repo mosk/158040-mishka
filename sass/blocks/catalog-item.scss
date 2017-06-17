@@ -1,0 +1,63 @@
+.catalog-item {
+  @include padding();
+  padding-bottom: 30px;
+  margin-top: 30px;
+  border: 1px solid  #ececec;
+  @include clear();
+}
+
+.catalog-item__title {
+  position: relative;
+  padding-top: 21px;
+  padding-bottom: 12px;
+  font-size: 17px;
+  font-weight: 700;
+  &--video {
+    padding-left: 40px;
+    &::before {
+      @include pseudo();
+      left: 0;
+      height: 30px;
+      width: 40px;
+      background-image: url(../../img/icon-video.svg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
+}
+
+.catalog-item__description {
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #444444;
+}
+
+.catalog-item__img {
+  @include margin();
+}
+
+.catalog-item__price {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.catalog-item__button:not(.catalog-item__button--video) {
+  float: right;
+  width: 25%;
+  height: 20px;
+  font-size: 0;
+  background-image: url(../../img/icon-cart.svg);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  border: 0 solid transparent;
+}
+
+.catalog-item__video {
+  @include margin();
+  width: 100%;
+  background-color: #8eb2a6;
+  background-image: url(../../img/video-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

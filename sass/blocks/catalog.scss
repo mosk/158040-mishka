@@ -1,0 +1,9 @@
+.catalog {
+  @include padding();
+  padding-bottom: 58px;
+}
+
+.catalog__title {
+  @include margin();
+  @include page-title();
+}
