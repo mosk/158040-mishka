@@ -18,7 +18,12 @@
 }
 
 .page-header__menu {
-  display: none;
+  @media #{$mobile} {
+    display: none;
+  }
+  @media #{$tablet} {
+    display: block;
+  }
 }
 
 .menu__toggle:checked ~ .page-header__menu {
