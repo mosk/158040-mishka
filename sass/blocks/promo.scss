@@ -23,25 +23,35 @@
     width: 100%;
   }
   @media #{$tablet} {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 
 .promo__button {
-  display: inline-block;
-  height: 103px;
-  width: 100%;
-  padding-top: 25px;
-  padding-left: 30px;
-  padding-right: 50%;
-  vertical-align: middle;
-  font-size: 19px;
-  font-weight: 600;
-  line-height: 24px;
-  color: #ffffff;
-  background-color: #56c3b2;
-  &:first-child {
-    background-color: #63d1bb;
+  @media #{$mobile} {
+    display: inline-block;
+    height: 103px;
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 50%;
+    vertical-align: middle;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: #56c3b2;
+    &:first-child {
+      background-color: #63d1bb;
+    }
+  }
+  @media #{$tablet} {
+    width: 50%;
   }
 }
