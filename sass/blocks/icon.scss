@@ -1,0 +1,23 @@
+.icon--interior,
+.icon--toys {
+  position: absolute;
+  top: 50%;
+  right: $padding-mobile;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  path {
+    fill: #149080;
+  }
+}
+
+.icon--interior,
+.icon--toys {
+
+}
+
+.icon--interior {
+  right: 40px;
+}
+
+.icon--toys {
+}

@@ -1,15 +1,25 @@
+$mobile: "(min-width: 320px)";
+
+$tablet: "(min-width: 768px)";
+
+$desktop: "(min-width: 1368px)";
+
+$bg-color: #ffffff;
+
+$padding-mobile: 30px;
+
 @mixin title() {
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
 }
 
-@mixin padding($padding: 30px) {
+@mixin padding($padding: $padding-mobile) {
   padding-left: $padding;
   padding-right: $padding;
 }
 
-@mixin margin($margin: -30px) {
+@mixin margin($margin: -($padding-mobile)) {
   margin-left: $margin;
   margin-right: $margin;
 }
@@ -35,11 +45,3 @@
   text-align: center;
   background-color: #f1f1f1;
 }
-
-$mobile: "(min-width: 320px)";
-
-$tablet: "(min-width: 768px)";
-
-$desktop: "(min-width: 1368px)";
-
-$bg-color: #ffffff;

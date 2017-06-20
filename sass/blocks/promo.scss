@@ -24,6 +24,7 @@
   }
   @media #{$tablet} {
     display: flex;
+    align-items: flex-end;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -32,6 +33,7 @@
 .promo__button {
   @media #{$mobile} {
     display: inline-block;
+    position: relative;
     height: 103px;
     width: 100%;
     padding-top: 25px;
@@ -50,5 +52,32 @@
   @media #{$tablet} {
     width: 50%;
     padding-right: 0;
+    cursor: pointer;
+    &:hover {
+      height: 108px;
+      background-color: #46c1ae;
+      & svg {
+        opacity: 0.7;
+      }
+      &:first-child {
+        background-color: #59d5bc;
+      }
+    }
+    &:active {
+      color: #97e2d2;
+      background-color: #46c1ae;
+      & svg {
+        opacity: 0.3;
+      }
+      &:first-child {
+        color: #8dd5c9;
+        background-color: #59d5bc;
+      }
+    }
   }
+}
+
+.promo__button:hover ~ .icon--interior,
+.promo__button:hover ~ .icon--toys {
+  opacity: 1;
 }
