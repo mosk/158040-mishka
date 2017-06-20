@@ -4,14 +4,14 @@
   font-weight: 700;
 }
 
-@mixin padding() {
-  padding-left: 30px;
-  padding-right: 30px;
+@mixin padding($padding: 30px) {
+  padding-left: $padding;
+  padding-right: $padding;
 }
 
-@mixin margin() {
-  margin-left: -30px;
-  margin-right: -30px;
+@mixin margin($margin: -30px) {
+  margin-left: $margin;
+  margin-right: $margin;
 }
 
 @mixin clear() {
@@ -41,3 +41,5 @@ $mobile: "(min-width: 320px)";
 $tablet: "(min-width: 768px)";
 
 $desktop: "(min-width: 1368px)";
+
+$bg-color: #ffffff;

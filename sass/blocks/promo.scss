@@ -23,10 +23,6 @@
     width: 100%;
   }
   @media #{$tablet} {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     padding-left: 50px;
     padding-right: 50px;
@@ -53,5 +49,6 @@
   }
   @media #{$tablet} {
     width: 50%;
+    padding-right: 0;
   }
 }
