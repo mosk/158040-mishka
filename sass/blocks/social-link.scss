@@ -1,0 +1,10 @@
+@media #{$mobile} {
+  .social-link {
+    &:first-child {
+      margin-left: 14%;
+    }
+    &:last-child {
+      margin-right: 16%;
+    }
+  }
+}

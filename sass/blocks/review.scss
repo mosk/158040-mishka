@@ -1,8 +1,8 @@
-.review {
-  @media #{$mobile} {
+@media #{$mobile} {
+  .review {
     position: relative;
     @include padding();
-    padding-top: 50px;
+    padding-top: 55px;
     padding-bottom: 50px;
     &::before {
       @include pseudo();
@@ -24,8 +24,6 @@
       background-size: 40px 10px;
     }
   }
-  @media #{$tablet} {
-  }
 }
 
 .review__title {
@@ -33,26 +31,43 @@
 }
 
 .review__text {
+  padding-top: 24px;
   font-size: 15px;
   line-height: 30px;
   color: #444444;
 }
 
 .review__name {
+  padding-top: 27px;
+  font-weight: 700;
   font-size: 17px;
 }
 
 .review__link {
+  display: block;
+  padding-top: 7px;
   font-size: 17px;
 }
 
 .review__nav {
   display: flex;
+  margin-top: 33px;
+  margin-bottom: 38px;
 }
 
 .review__button {
+  position: relative;
   width: 50%;
   height: 52px;
   border-width: 1px;
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media #{$tablet} {
 }
 
