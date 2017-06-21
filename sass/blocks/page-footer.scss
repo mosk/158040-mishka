@@ -12,12 +12,18 @@
   height: 80px;
   font-size: 0;
   &::after {
-    content: '';
-    display: block;
-    position: absolute;
+    @include pseudo();
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 30px;
+    width: 50%;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+  &::before {
+    @include pseudo();
+    bottom: 0;
+    right: 30px;
+    width: 50%;
     height: 1px;
     background-color: #e5e5e5;
   }
