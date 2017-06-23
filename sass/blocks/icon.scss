@@ -1,6 +1,16 @@
+.icon {
+  position: absolute;
+  &--search,
+  &--cart {
+    left: $padding-mobile;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.2;
+  }
+}
+
 .icon--interior,
 .icon--toys {
-  position: absolute;
   top: 50%;
   right: $padding-mobile;
   transform: translateY(-50%);
@@ -20,4 +30,15 @@
 }
 
 .icon--toys {
+}
+
+.icon--buy {
+  position: relative;
+  height: 20px;
+  width: 20px;
+}
+
+.icon--video {
+  left: 3px;
+  top: 30px;
 }

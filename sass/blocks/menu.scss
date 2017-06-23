@@ -43,6 +43,7 @@
   }
 
   .menu__item {
+    position: relative;
     font-size: 17px;
     border-top: 2px solid #ececec;
     &--hidden {

@@ -1,9 +1,14 @@
-.catalog {
-  @include padding();
-  padding-bottom: 58px;
+@media #{$mobile} {
+  .catalog {
+    @include padding();
+    padding-bottom: 22px;
+  }
+
+  .catalog__title {
+    @include margin();
+    @include page-title();
+  }
 }
 
-.catalog__title {
-  @include margin();
-  @include page-title();
+@media #{$tablet} {
 }
