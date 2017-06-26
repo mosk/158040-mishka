@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    @include padding();
     padding-bottom: 29px;
     margin-top: 30px;
     border: 1px solid  #ececec;
@@ -18,20 +17,22 @@
   }
 
   .catalog-item__title {
+    @include padding();
     position: relative;
-    padding-top: 21px;
+    padding-top: 27px;
     padding-bottom: 8px;
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
     &--video {
-      padding-left: 58px;
+      padding-left: 89px;
       padding-top: 24px;
       padding-bottom: 24px;
     }
   }
 
   .catalog-item__description {
+    @include padding();
     position: relative;
     width: 100%;
     padding-bottom: 23px;
@@ -39,22 +40,37 @@
     font-size: 13px;
     line-height: 24px;
     color: #444444;
-    &::after {
+    &::before {
       @include pseudo();
+      right: 30px;
       bottom: 0;
       height: 1px;
-      width: 100%;
+      width: 50%;
+      background-color: #ececec;
+    }
+    &::after {
+      @include pseudo();
+      left: 30px;
+      bottom: 0;
+      height: 1px;
+      width: 50%;
       background-color: #ececec;
     }
   }
 
   .catalog-item__img {
-    @include margin();
+    width: 100%;
   }
 
   .catalog-item__price {
+    @include padding();
     font-size: 15px;
     font-weight: 700;
+  }
+
+  .catalog-item__button {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .catalog-item__button:not(.catalog-item__button--video) {
@@ -68,7 +84,7 @@
   }
 
   .catalog-item__video {
-    @include margin();
+    width: 100%;
     margin-bottom: 27px;
     background-color: #8eb2a6;
     background-image: url(../../img/video-mobile@1x.jpg);

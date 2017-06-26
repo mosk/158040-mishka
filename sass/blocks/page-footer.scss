@@ -38,6 +38,7 @@
   font-size: 19px;
   font-weight: 700;
   text-align: center;
+  cursor: pointer;
   a {
     font-size: 0;
     margin-left: 20px;
@@ -48,5 +49,13 @@
   }
   svg {
     fill: #63d1bb;
+  }
+  &:hover {
+    svg {
+      fill: #46c1ae;
+    }
+  }
+  &:active {
+    opacity: 0.3;
   }
 }

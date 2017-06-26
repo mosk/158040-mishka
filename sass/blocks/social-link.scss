@@ -6,5 +6,16 @@
     &:last-child {
       margin-right: 16%;
     }
+    &:hover {
+      svg path {
+        fill: #46c1ae;
+      }
+    }
+    &:active {
+      svg path {
+        fill: #46c1ae;
+        opacity: 0.3;
+      }
+    }
   }
 }
