@@ -1,36 +1,190 @@
-.service-item {
-  border: 0px solid transparent;
-  font-size: 17px;
-  font-weight: 700;
-  input[type=text] {
-    padding-left: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  input[type=text],
-  textarea {
-    width: 100%;
+@media #{$mobile} {
+  .service-item {
+    display: flex;
+    padding-bottom: 16px;
+    border: 0px solid transparent;
+    border-top: 1px solid #63d1bb;
     font-size: 17px;
-    border: 0 solid transparent;
+    font-weight: 700;
+    label,
+    input {
+      cursor: pointer;
+    }
+    input,
+    textarea {
+      &:focus {
+        outline: none;
+      }
+    }
+    input[type=text] {
+      padding-left: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    input[type=radio],
+    input[type=checkbox] {
+      display: none;
+    }
+    input[type=text],
+    textarea {
+      width: 100%;
+      max-width: 100%;
+      font-size: 17px;
+      border: 0 solid transparent;
+    }
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 39px;
+      width: 39px;
+      border: 2px solid  #444444;
+      fill: transparent;
+      &:hover {
+        border-color: #62d1ba;
+      }
+    }
+    label {
+      position: relative;
+      line-height: 18px;
+    }
+    &--type {
+      svg {
+        border-radius: 50%;
+      }
+    }
+    &--person {
+      padding-bottom: 6px;
+    }
+    &--tel {
+      padding-bottom: 4px;
+    }
+    &--mail {
+      padding-bottom: 4px;
+    }
+    &--extra {
+      padding-bottom: 15px;
+    }
   }
-}
 
-.service-item__title {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #63d1bb;
-}
+  .service-item__title {
+    min-width: 62px;
+    padding-right: 15px;
+    margin-bottom: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #63d1bb;
+    &--person {
+      margin-bottom: 26px;
+    }
+    &--tel {
+      margin-bottom: 6px;
+    }
+    &--mail {
+      margin-bottom: 6px;
+    }
+    &--extra {
+      margin-bottom: 22px;
+    }
+  }
 
-.service-item__type,
-.service-item__color,
-.service-item__person,
-.service-item__tel,
-.service-item__mail,
-.service-item__extra {
-  display: block;
-  margin-bottom: 10px;
-}
+  .service-item__type,
+  .service-item__color,
+  .service-item__person,
+  .service-item__tel,
+  .service-item__mail,
+  .service-item__extra {
+    display: block;
+    margin-bottom: 24px;
+  }
 
-.service-item__extra {
-  padding: 15px;
+  .service-item__type {
+    padding-left: 62px;
+  }
+
+  .service-item__color {
+    padding-left: 62px;
+    margin-bottom: 43px;
+    &:last-child {
+      margin-bottom: 22px;
+    }
+  }
+
+  .service-item__person {
+    padding-left: 0;
+    margin-bottom: 0px;
+  }
+
+  .service-item__person-input {
+    margin-bottom: 22px;
+
+  }
+
+  input[type=text].service-item__person-input {
+    border-bottom: 2px solid #000000;
+    &:focus {
+      border-color: #62d1ba;
+    }
+    &:hover {
+      border-color: #62d1ba;
+    }
+    &:last-child {
+      padding-bottom: 14px;
+    }
+  }
+
+  .service-item__tel,
+  .service-item__mail {
+    padding-bottom: 0;
+    border-bottom: 2px solid #000000;
+    input[type=text] {
+      padding-bottom: 13px;
+    }
+    &:focus {
+      border-color: #62d1ba;
+    }
+    &:hover {
+      border-color: #62d1ba;
+    }
+  }
+
+  textarea.service-item__extra {
+    padding: 15px;
+    margin-bottom: 0;
+    min-height: 142px;
+    border: 2px solid  #000000;
+    &:focus {
+      border-color: #62d1ba;
+    }
+    &:hover {
+      border-color: #62d1ba;
+    }
+  }
+
+  .service-item__type-accessory:checked ~ .service-item__type[for$="accessory"],
+  .service-item__type-toy:checked ~ .service-item__type[for$="toy"] {
+    svg {
+      fill: #62d1ba;
+    }
+  }
+
+  [class="service-item__color"] {
+    svg {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .service-item__color-white:checked ~ .service-item__color[for$="white"],
+  .service-item__color-grey:checked ~ .service-item__color[for$="grey"],
+  .service-item__color-tiffany:checked ~ .service-item__color[for$="tiffany"],
+  .service-item__color-pink:checked ~ .service-item__color[for$="pink"],
+  .service-item__color-black:checked ~ .service-item__color[for$="black"],
+  .service-item__color-orange:checked ~ .service-item__color[for$="orange"] {
+    svg {
+      fill: #62d1ba;
+      background-color: red;
+    }
+  }
 }

@@ -1,19 +1,24 @@
-.service {
-  @include padding();
-  padding-bottom: 58px;
-}
+@media #{$mobile} {
+  .service {
+    @include padding();
+    padding-bottom: 16px;
+  }
 
-.service__title {
-  @include margin();
-  @include page-title();
-}
+  .service__title {
+    @include margin();
+    @include page-title();
+  }
 
-.service__description {
-  font-size: 13px;
-  line-height: 24px;
-}
+  .service__description {
+    padding-top: 22px;
+    padding-bottom: 20px;
+    font-size: 13px;
+    line-height: 24px;
+  }
 
-.service__note {
-  font-size: 14px;
-  color: #444444;
+  .service__note {
+    margin-bottom: 29px;
+    font-size: 14px;
+    color: #444444;
+  }
 }

@@ -55,62 +55,74 @@
         <h2 class="service__title">Вязание на заказ</h2>
         <p class="service__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form action="https://echo.htmlacademy.ru/" method="post" class="service__form">
-          <fieldset class="service-item">
+          <fieldset class="service-item service-item--type">
             <legend class="service-item__title">Тип</legend>
-            <label for="type-accessory" class="service-item__type">
-              <input type="radio" name="type" id="type-accessory" value="Аксессуар для интерьера" checked>Аксессуар для интерьера
+            <input class="service-item__type-accessory" type="radio" name="type" id="type-accessory" value="Аксессуар для интерьера" checked>
+            <label class="service-item__type" for="type-accessory">
+              <svg>
+                <circle id="circle" r="7" cx="17.5" cy="17.5"/>
+              </svg>Аксессуар для интерьера
             </label>
-            <label for="type-toy" class="service-item__type">
-              <input type="radio" name="type" id="type-toy" value="Детская игрушка">Детская игрушка
+            <input class="service-item__type-toy" type="radio" name="type" id="type-toy" value="Детская игрушка">
+            <label class="service-item__type" for="type-toy">
+              <svg>
+                <circle id="circle" r="7" cx="17.5" cy="17.5"/>
+              </svg>Детская игрушка
             </label>
           </fieldset>
-          <fieldset class="service-item">
+          <fieldset class="service-item service-item--color">
             <legend class="service-item__title">Цвет</legend>
+            <input class="service-item__color-white" name="color" type="checkbox" id="color-white" value="Белый" checked>
             <label for="color-white" class="service-item__color">
-              <input name="color" type="checkbox" id="color-white" value="Белый" checked>Белый
+              <svg></svg>Белый
             </label>
+            <input class="service-item__color-grey" name="color" type="checkbox" id="color-grey" value="Серый" checked>
             <label for="color-grey" class="service-item__color">
-              <input name="color" type="checkbox" id="color-grey" value="Серый" checked>Серый
+              <svg></svg>Серый
             </label>
+            <input class="service-item__color-tiffany" name="color" type="checkbox" id="color-tiffany" value="Тиффани">
             <label for="color-tiffany" class="service-item__color">
-              <input name="color" type="checkbox" id="color-tiffany" value="Тиффани">«Тиффани»
+              <svg></svg>«Тиффани»
             </label>
+            <input class="service-item__color-black" name="color" type="checkbox" id="color-black" value="Чёрный">
             <label for="color-black" class="service-item__color">
-              <input name="color" type="checkbox" id="color-black" value="Чёрный">Чёрный
+              <svg></svg>Чёрный
             </label>
+            <input class="service-item__color-pink" name="color" type="checkbox" id="color-pink" value="Розовый">
             <label for="color-pink" class="service-item__color">
-              <input name="color" type="checkbox" id="color-pink" value="Розовый">Розовый
+              <svg></svg>Розовый
             </label>
+            <input class="service-item__color-orange" name="color" type="checkbox" id="color-orange" value="Оранжевый">
             <label for="color-orange" class="service-item__color">
-              <input name="color" type="checkbox" id="color-orange" value="Оранжевый">Оранжевый
+            <svg></svg>Оранжевый
             </label>
           </fieldset>
-          <fieldset class="service-item">
-            <legend class="service-item__title">ФИО</legend>
-            <label for="person-name" class="service-item__person">Имя:</label>
-            <input name="person-name" type="text" id="person-name" placeholder="Введите ваше имя*">
-            <label for="person-surname" class="service-item__person">Фамилия:</label>
-            <input name="person-surname" type="text" id="person-surname" placeholder="Укажите фамилию*">
-            <label for="person-patronymic" class="service-item__person">Отчество:</label>
-            <input name="person-patronymic" type="text" id="person-patronymic" placeholder="Отчество, если желаете">
+          <fieldset class="service-item service-item--person">
+            <legend class="service-item__title service-item__title--person">ФИО</legend>
+            <label class="service-item__person" for="person-name">Имя:</label>
+            <input class="service-item__person-input" name="person-name" type="text" id="person-name" placeholder="Введите ваше имя*">
+            <label class="service-item__person" for="person-surname">Фамилия:</label>
+            <input class="service-item__person-input" name="person-surname" type="text" id="person-surname" placeholder="Укажите фамилию*">
+            <label class="service-item__person" for="person-patronymic">Отчество:</label>
+            <input class="service-item__person-input" name="person-patronymic" type="text" id="person-patronymic" placeholder="Отчество, если желаете">
           </fieldset>
-          <fieldset class="service-item">
-            <legend class="service-item__title">Тел</legend>
+          <fieldset class="service-item service-item--tel">
+            <legend class="service-item__title service-item__title--tel">Тел</legend>
             <label for="tel-number" class="service-item__tel">
               <input name="tel-number" type="text" id="tel-number" placeholder="+7 XXX XX XX*">
             </label>
           </fieldset>
-          <fieldset class="service-item">
-            <legend class="service-item__title">E-mail</legend>
+          <fieldset class="service-item service-item--mail">
+            <legend class="service-item__title service-item__title--mail">E-mail</legend>
             <label for="mail-address" class="service-item__mail">
               <input name="mail-address" type="text" id="mail-address" placeholder="Ваш Email*">
             </label>
           </fieldset>
-          <fieldset class="service-item">
-            <legend class="service-item__title">Доп</legend>
-            <textarea name="extra-text" id="extra-text" cols="30" rows="10" class="service-item__extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <fieldset class="service-item service-item--extra">
+            <legend class="service-item__title service-item__title--extra">Доп</legend>
+            <textarea class="service-item__extra" name="extra-text" id="extra-text" cols="30" rows="3" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
-          <p class="service__note">*Поля обязательны к заполнению</p>
+          <p class="service__note">*Поля обязательны для заполнения</p>
           <input type="submit" class="button button--submit" value="Отправить заказ">
         </form>
       </section>
