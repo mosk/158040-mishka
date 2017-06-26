@@ -41,3 +41,10 @@
     display: block;
   }
 }
+
+@media #{$tablet} {
+  .page-header__header {
+    flex-wrap: wrap;
+    height: 89px;
+  }
+}

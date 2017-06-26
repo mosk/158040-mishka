@@ -89,11 +89,24 @@
 
 @media #{$tablet} {
   .menu {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
+    width: 75%;
   }
 
   .menu__toggle-description {
     display: none;
+  }
+
+  .menu__items {
+    order: 2;
+  }
+
+  .menu__user-items {
+    width: 100%;
+    display: flex;
+    order: 1;
   }
 
   .menu__item {
